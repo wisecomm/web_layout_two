@@ -14,3 +14,7 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# https://flutter.github.io/samples/web/web_dashboard/#/
+- 샘플에 메뉴 스크롤 오버플로우 수정 : child: SingleChildScrollView( 추가
+- AdaptiveScaffold 코드 사용하여 만듬 ( 코드 확인 후 사용여부 결정)
