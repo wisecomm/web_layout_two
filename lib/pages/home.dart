@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../main_page/title_bar/title_bar.dart';
 import '../widgets/third_party/adaptive_scaffold.dart';
 
 class HomePage extends StatefulWidget {
@@ -21,14 +22,7 @@ class _HomePageState extends State<HomePage> {
     return AdaptiveScaffold(
       title: const Text('Dashboard App'),
       actions: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: TextButton(
-            style: TextButton.styleFrom(foregroundColor: Colors.white),
-            onPressed: () => {}, //_handleSignOut(),
-            child: const Text('Sign Out'),
-          ),
-        )
+        TitleBar(),
       ],
       currentIndex: _pageIndex,
       destinations: const [
@@ -59,6 +53,7 @@ class _HomePageState extends State<HomePage> {
       return const EntriesPage();
     }
 */
+
     return const Center(child: Text('Settings page'));
   }
 

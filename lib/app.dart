@@ -7,6 +7,7 @@ import 'api/mock.dart';
 import 'auth/mock.dart';
 
 import 'pages/home.dart';
+import 'pages/sign_in.dart';
 
 /// The global state the app.
 class AppState {
@@ -91,14 +92,10 @@ class _SignInSwitcherState extends State<SignInSwitcher> {
   @override
   Widget build(BuildContext context) {
     return AnimatedSwitcher(
-        switchInCurve: Curves.easeOut,
-        switchOutCurve: Curves.easeOut,
-        duration: const Duration(milliseconds: 200),
-        child: HomePage(
-          onSignOut: _handleSignOut,
-        )
-/*      
-      _isSignedIn
+      switchInCurve: Curves.easeOut,
+      switchOutCurve: Curves.easeOut,
+      duration: const Duration(milliseconds: 200),
+      child: _isSignedIn
           ? HomePage(
               onSignOut: _handleSignOut,
             )
@@ -106,8 +103,7 @@ class _SignInSwitcherState extends State<SignInSwitcher> {
               auth: widget.appState!.auth,
               onSuccess: _handleSignIn,
             ),
-*/
-        );
+    );
   }
 
   void _handleSignIn(User user) {

@@ -8,7 +8,7 @@ class ProfileSection extends StatelessWidget {
     return Row(
       children: const [
         Text(
-          "Rexford Nyarko",
+          "Danyoh",
           style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         SizedBox(
