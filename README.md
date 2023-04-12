@@ -17,4 +17,4 @@ samples, guidance on mobile development, and a full API reference.
 
 # https://flutter.github.io/samples/web/web_dashboard/#/
 - 샘플에 메뉴 스크롤 오버플로우 수정 : child: SingleChildScrollView( 추가
-- AdaptiveScaffold 코드 사용하여 만듬 ( 코드 확인 후 사용여부 결정)
+- AdaptiveScaffold 코드 사용하여 만듬 ( 패키지 코드 와 비교 ㅎㅎㅎ)

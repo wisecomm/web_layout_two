@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../main_page/title_bar/title_bar.dart';
 import '../widgets/third_party/adaptive_scaffold.dart';
+import 'dashboard.dart';
+import 'entries.dart';
 
 class HomePage extends StatefulWidget {
   final VoidCallback onSignOut;
@@ -44,7 +46,6 @@ class _HomePageState extends State<HomePage> {
   }
 
   static Widget _pageAtIndex(int index) {
-    /*
     if (index == 0) {
       return const DashboardPage();
     }
@@ -52,13 +53,7 @@ class _HomePageState extends State<HomePage> {
     if (index == 1) {
       return const EntriesPage();
     }
-*/
 
     return const Center(child: Text('Settings page'));
-  }
-
-  bool get _hasFloatingActionButton {
-    if (_pageIndex == 2) return false;
-    return true;
   }
 }
